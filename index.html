@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+  }
+
+  input {
+    height: 24px;
+    padding: 4px;
+    text-transform: uppercase;
+  }
+
+  textarea {
+    width: 155px;
+    resize: none;
+    padding: 16px;
+  }
+
+  button {
+    width: 189px;
+  }
+
+  .main-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 80%;
+  }
+
+  .container {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .info {
+    padding: 16px;
+  }
+</style>
+
+<body>
+  <section class="info">
+    <span>
+      Tested on Chrome : Version 78.0.3904.108 (Official Build) (64-bit)
+    </span>
+  </section>
+  <div class="main-area">
+    <div class="container">
+      <div class="converter-area">
+        <input type="number" id="number" placeholder="enter a number">
+        <button id="btnNumberToRoman">Number To Roman</button>
+        <textarea id="outputRoman"></textarea>
+      </div>
+      <div class="converter-area">
+        <input type="roman" id="roman" placeholder="enter a roman numeral">
+        <button id="btnRomanToNumber">Roman to Number</button>
+        <textarea id="outputNumber"></textarea>
+      </div>
+    </div>
+  </div>
+  <script src="odev2.js"></script>
+</body>
+
+</html>
